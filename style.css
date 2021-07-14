@@ -1,0 +1,36 @@
+body{width:100%;
+    margin: 0;
+    padding: 0;}
+
+section{margin-bottom: 158px;}
+.players{   display: grid;
+            grid-template-columns: repeat(3,330px);
+            grid-gap:15px;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins';
+        }
+
+.player{background-color: #ffffff;
+        height: 474px;
+        box-shadow: 5px 5px 5px 5px rgb(124, 122, 122);;
+        padding:1em;
+    }
+.player img{width:100%;}
+.player h2{font-weight: 700;} 
+.player p{text-shadow: 1px 1.5px #918b8b;}
+
+footer{margin-bottom: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+.end-part{display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 483.87px;
+        height: 213px;
+        }
+.banner img{width:483.87px;
+        height:110px}
+
+
