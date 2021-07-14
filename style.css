@@ -1,14 +1,69 @@
 body{width:100%;
     margin: 0;
-    padding: 0;}
+    padding: 0;
+    font-family: 'Poppins';}
 
-section{margin-bottom: 158px;}
+.top{
+    display: flex;
+    background-color: #2D25A0;
+    align-items: center;
+    padding: 20px 0px;
+    margin-bottom: 4em;
+    }
+.header-description{width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 10%;
+                    }
+
+@keyframes slidings{
+
+            from{
+                    color: #ffffff;
+                }
+            
+            to{
+                color: orange;
+                }
+
+}
+
+.header-description h1{width: 485px;
+                        font-size: 4em;
+                        font-weight: 700;
+                        color:#ffffff;
+                        ;    
+                    }
+.top:hover .header-description h1{animation: slidings 4s ease-out 0s infinite alternate;
+                            animation-play-state:running;}
+
+.watch-button{width: 168px;;
+            height: 32px;
+            padding: 1em;
+            font-size: 1em;
+            font-weight: 500;
+            background-color: #E02C6D;
+            text-align: center;
+            border-radius: 5px ;
+            }
+.watch-button:hover{transform:translate(0px,-1em) scale(1.5);}
+
+.Watch{
+    text-decoration: none;
+    color: #ffffff;}
+
+.header-banner{width: 50%;
+                padding-left: 10%;
+                }
+.header-banner img{width:60%}
+
+main{margin-bottom: 158px;}
 .players{   display: grid;
             grid-template-columns: repeat(3,330px);
             grid-gap:15px;
             align-items: center;
             justify-content: center;
-            font-family: 'Poppins';
+            
         }
 
 .player{background-color: #ffffff;
@@ -19,6 +74,25 @@ section{margin-bottom: 158px;}
 .player img{width:100%;}
 .player h2{font-weight: 700;} 
 .player p{text-shadow: 1px 1.5px #918b8b;}
+
+.bottom-section{margin-top: 4em;}
+.Videos-heading{
+    font-size: 3em;    
+    font-weight: 700;
+    color:gray;
+    text-align: center;
+    text-decoration: underline;}
+.freekick-videos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;}
+
+.videos {width:30%}
+.videos video{width: 80%;}
+
+
 
 footer{margin-bottom: 63px;
         display: flex;
