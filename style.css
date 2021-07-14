@@ -108,3 +108,86 @@ footer{margin-bottom: 63px;
         height:110px}
 
 
+
+        /* Mobile responsive */
+@media only screen and (max-width:688px) {
+    
+    .top{
+        display: flex;
+        flex-direction: column;
+        background-color: #2D25A0;
+        padding: 5px 0px;
+        margin-bottom: 3em;
+        }
+
+    .header-description .header-banner{width: 100%;}
+    .header-description h1{
+        width: 100%;
+        font-size: 2em;
+        font-weight: 700;
+        color:#ffffff;
+        ;    
+    }
+
+    .header-banner{
+        margin-top:20px;
+        }
+    .header-banner img{width:100%}
+
+
+    main{margin-bottom: 3em;
+        width: 100%;}
+
+    .players{display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap:5px;
+            align-items: center;
+            justify-content: center;
+        
+    }
+
+    .player{background-color: #ffffff;
+        height: 474px;
+        padding:1em;
+    }
+    .player img{width:100%;}
+    .player h2{font-weight: 700;} 
+    .player p{text-shadow: 1px 1.5px #918b8b;}
+
+
+    
+.bottom-section{width:100%;
+    margin-top: 4em;}
+.Videos-heading{
+    font-size: 1.5em;    
+    font-weight: 700;
+    color:gray;
+    text-align: center;
+    text-decoration: underline;}
+.freekick-videos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;}
+
+.videos {width:80%}
+.videos video{width: 80%;}
+
+
+    footer{margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;}
+    .end-part{display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 213px;
+        }
+    .banner img{width:60%;
+        height:110px;
+        align-items: center;}
+
+    
+}
