@@ -1,7 +1,12 @@
+/* Total body */
 body{width:100%;
     margin: 0;
     padding: 0;
     font-family: 'Poppins';}
+
+/* Start Header section */
+
+/*Start top section */
 
 .top{
     display: flex;
@@ -10,11 +15,10 @@ body{width:100%;
     padding: 20px 0px;
     margin-bottom: 4em;
     }
-.header-description{width: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    padding-left: 10%;
-                    }
+
+/* End top section */
+
+/* Start Animation section */
 
 @keyframes slidings{
 
@@ -28,6 +32,16 @@ body{width:100%;
 
 }
 
+/* End Animation section */
+
+/* Start Header description */
+.header-description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    }
+
 .header-description h1{width: 485px;
                         font-size: 4em;
                         font-weight: 700;
@@ -35,7 +49,11 @@ body{width:100%;
                         ;    
                     }
 .top:hover .header-description h1{animation: slidings 4s ease-out 0s infinite alternate;
-                            animation-play-state:running;}
+                                animation-play-state:running;}
+
+.Watch{
+        text-decoration: none;
+        color: #ffffff;}
 
 .watch-button{width: 168px;;
             height: 32px;
@@ -46,18 +64,27 @@ body{width:100%;
             text-align: center;
             border-radius: 5px ;
             }
+
 .watch-button:hover{transform:translate(0px,-1em) scale(1.5);}
 
-.Watch{
-    text-decoration: none;
-    color: #ffffff;}
+/* End header description */
+
+/* Satrt header image */
 
 .header-banner{width: 50%;
-                padding-left: 10%;
-                }
+                padding-left: 10%;}
+
 .header-banner img{width:60%}
 
+/* End header image */
+
+/* End header section */
+
+/* Start main part */
+
 main{margin-bottom: 158px;}
+
+/* Start player section */
 .players{   display: grid;
             grid-template-columns: repeat(3,330px);
             grid-gap:15px;
@@ -74,6 +101,10 @@ main{margin-bottom: 158px;}
 .player img{width:100%;}
 .player h2{font-weight: 700;} 
 .player p{text-shadow: 1px 1.5px #918b8b;}
+
+/* End player section*/
+
+/* Start video section */
 
 .bottom-section{margin-top: 4em;}
 .Videos-heading{
@@ -92,7 +123,12 @@ main{margin-bottom: 158px;}
 .videos {width:30%}
 .videos video{width: 80%;}
 
+/* End video section */
 
+/* End main section */
+
+
+/* Start Footer section */
 
 footer{margin-bottom: 63px;
         display: flex;
@@ -106,12 +142,15 @@ footer{margin-bottom: 63px;
         }
 .banner img{width:483.87px;
         height:110px}
+/* End footer section */
 
 
+        /*For Mobile responsive */
 
-        /* Mobile responsive */
+/* Media query */
 @media only screen and (max-width:688px) {
-    
+
+/*Start top section */
     .top{
         display: flex;
         flex-direction: column;
@@ -119,7 +158,8 @@ footer{margin-bottom: 63px;
         padding: 5px 0px;
         margin-bottom: 3em;
         }
-
+    
+/* Start Header description */
     .header-description .header-banner{width: 100%;}
     .header-description h1{
         width: 100%;
@@ -129,51 +169,68 @@ footer{margin-bottom: 63px;
         ;    
     }
 
-    .header-banner{
-        margin-top:20px;
-        }
+/* End header description */
+
+/* Satrt header image */
+
+    .header-banner{margin-top:20px;}
     .header-banner img{width:100%}
 
+/* End header image */
+
+/* End top section */
+
+/* Start main part */
 
     main{margin-bottom: 3em;
         width: 100%;}
 
+/* Start player section */
+
     .players{display: grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(1,1fr);
             grid-gap:5px;
             align-items: center;
             justify-content: center;
+            padding:1em;
         
     }
 
     .player{background-color: #ffffff;
-        height: 474px;
-        padding:1em;
-    }
+            height: 474px;
+            padding:1em;
+           }
     .player img{width:100%;}
     .player h2{font-weight: 700;} 
     .player p{text-shadow: 1px 1.5px #918b8b;}
 
+/* End player section*/
 
-    
-.bottom-section{width:100%;
-    margin-top: 4em;}
-.Videos-heading{
-    font-size: 1.5em;    
-    font-weight: 700;
-    color:gray;
-    text-align: center;
-    text-decoration: underline;}
-.freekick-videos{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;}
+/* Start video section */
 
-.videos {width:80%}
-.videos video{width: 80%;}
+    .bottom-section{width:100%;
+        margin-top: 4em;}
+    .Videos-heading{
+        font-size: 1.5em;    
+        font-weight: 700;
+        color:gray;
+        text-align: center;
+        text-decoration: underline;}
+    .freekick-videos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;}
 
+    .videos {width:80%}
+    .videos video{width: 80%;}
+
+/* End video section */
+
+/* End main section */
+
+/* Start Footer section */
 
     footer{margin-bottom: 15px;
         width: 100%;
@@ -185,9 +242,9 @@ footer{margin-bottom: 63px;
         align-items: center;
         height: 213px;
         }
-    .banner img{width:60%;
-        height:110px;
-        align-items: center;}
+    .banner img{width:80%;
+        height:110px;}
 
+/* End footer section */
     
 }
